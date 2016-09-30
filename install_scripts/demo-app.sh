@@ -19,7 +19,7 @@ echo "Creating CurationConcerns demo in ${HOME}/ldata"
 cd
 rails new ldata --skip-spring
 cd ldata
-echo "gem 'curation_concerns', '1.6.1'" >> Gemfile
+echo "gem 'curation_concerns', '1.6.2'" >> Gemfile
 bundle install --quiet
 rails generate curation_concerns:install -f -q
 rake db:migrate
