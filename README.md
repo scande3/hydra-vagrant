@@ -13,7 +13,7 @@ You will need to have some type of visualization software. On Ubuntu, this can b
 
 ## Setup
 
-1. `git clone https://github.com/projecthydra-labs/hydra-vagrant.git`
+1. `git clone https://github.com/scande3/hydra-vagrant.git`
 2. `cd hydra-vagrant`
 3. `vagrant up`
 
