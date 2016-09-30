@@ -15,25 +15,12 @@ task :demo do
   end
 end"
 
-echo "Creating CurationConcerns demo in ${HOME}/curation-concerns-demo"
+echo "Creating CurationConcerns demo in ${HOME}/ldata"
 cd
-rails new curation-concerns-demo --skip-spring
-cd curation-concerns-demo
-echo "gem 'curation_concerns', '1.5.0'" >> Gemfile
+rails new ldata --skip-spring
+cd ldata
+echo "gem 'curation_concerns', '1.6.1'" >> Gemfile
 bundle install --quiet
 rails generate curation_concerns:install -f -q
-rails generate curation_concerns:work Book -q
-rake db:migrate
-echo "$DEMO_TASK" >> Rakefile
-
-echo "Creating Sufia demo in ${HOME}/sufia-demo"
-cd
-rails new sufia-demo --skip-spring
-cd sufia-demo
-echo "gem 'sufia', github: 'projecthydra/sufia', branch: :master" >> Gemfile
-echo "gem 'flipflop', github: 'jcoyne/flipflop', branch: :hydra" >> Gemfile
-bundle install --quiet
-rails generate sufia:install -f -q
-rails generate sufia:work Work -q
 rake db:migrate
 echo "$DEMO_TASK" >> Rakefile
