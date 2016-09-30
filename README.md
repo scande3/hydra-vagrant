@@ -23,13 +23,13 @@ You can shell into the machine with `vagrant ssh` or `ssh -p 2222 vagrant@localh
 
 * In three seperate command prompt windows, run "vagrant ssh". Then do one of the following in each of them in order (waiting for the previous to finish):
   * `cd ldata`
-    `solr_wrapper -p 8983`
+  * `solr_wrapper -p 8983`
 
   * `cd ldata`
-    `fcrepo_wrapper -p 8984`
+  * `fcrepo_wrapper -p 8984`
 
   * `cd ldata`
-    `rails server -b 0.0.0.0`
+  * `rails server -b 0.0.0.0`
 
 ## Environment
 
