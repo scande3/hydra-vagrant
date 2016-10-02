@@ -27,7 +27,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :forwarded_port, guest: 8991, host: 8991 # Fedora 4.5
 
   config.vm.provider "virtualbox" do |v|
-    v.memory = 2048
+    v.memory = 4096
   end
 
   shared_dir = "/vagrant"
